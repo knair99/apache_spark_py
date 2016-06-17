@@ -25,7 +25,7 @@ To process Kafka, run this along with the zookeeper module.
 5. Next, run spark rdd machine (through spark submit):
 ./spark­1.6.1­bin­hadoop2.6/bin/spark­submit ­­packages
 org.apache.spark:spark­streaming­kafka_2.10:1.6.1 spark_consumer.py
-6. Optionally, you can see my output also streaming through kafka console consumer:
+6. Optionally, you can see output also streaming through kafka console consumer:
 bin/kafka­console­consumer.sh ­­zookeeper localhost:2181 ­­topic test ­­from­beginning
 7. Next, start web server by running: python ­m SimpleHTTPServer
 8. The web server will run on port 8000, kafka bootstrap on 9092 and kafka console
